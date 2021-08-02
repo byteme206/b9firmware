@@ -5,7 +5,7 @@
 
 ### Imports
 # Language Core libraries
-import time import monotonic as now
+from time import monotonic as now
 import array
 import math
 try:
