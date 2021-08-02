@@ -1,6 +1,6 @@
 # B9 Robot Model Firmware v0.1, copyright 2021 Evan C Wade.
 # Based on Circuit Python and designed for use with the Adafruit Feather M4
-# microcontroller, FeatherWing PropMaker, and FeatherWing Adalogger.
+# microcontroller with FeatherWing PropMaker.
 
 
 ### Imports
