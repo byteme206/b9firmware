@@ -129,9 +129,6 @@ def sleep(delay):
 def get_voltage(pin):
     return (pin.value * 3.3) / 65536 * 2
 
-# set up a time object for use in sleep functions
-initial = now()
-
 # LED Helpers
 # color definitions
 RED = (255, 0, 0)
@@ -262,8 +259,8 @@ while True:
 # waking up and repeating its warning until the battery falls below usable
 # levels.
     if audio.playing == False:
-        if now() - initial > 120.0:
-            enable.value = False
+        sleep(120.0)
+        enable.value = False
 
         if get_voltage(vbat_voltage) < 3.31:
             pixels.fill(BLACK)
