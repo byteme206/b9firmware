@@ -185,7 +185,7 @@ def blinky_random(wait, qty, palette_index):
             pixels[j] = [0, 0, 0]
             pixels.show()
             sleep(wait)
-    pass
+            
 
 # Function that randomly flashes one of two "heartbeat" lights at the top of
 # the robot's chest panel.
@@ -204,7 +204,6 @@ def heartbeat(wait, palette_index):
             thumpers[j] = [0, 0, 0]
             thumpers.show()
             sleep(wait)
-    pass
 
 
 # Function that automatically flashes the LED voice light when the audio levels
@@ -231,7 +230,6 @@ while True:
         sleep(.01)
         filename = voicemp3[random.randint(0, len(voicemp3) - 1]
         decoder.file = open(filename, "rb")
-        initial = now()
         audio.play(decoder)
         pass
 
