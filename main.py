@@ -222,11 +222,7 @@ def voice_flash(palette_index):
 ### Main loop
 while True:
 # Run the chest lights on a random pattern
-    blinky_random(0.3, 2, palette_index)
-    heartbeat(0.1, palette_index)
-    blinky_random(0.3, 2, palette_index)
-    heartbeat(0.1, palette_index)
-    blinky_random(0.3, 2, palette_index)
+    blinky_random(0.3, 7, palette_index)
     heartbeat(0.1, palette_index)
 
 # Detect a double-tap event and respond by playing a random voice clip of B9
