@@ -263,12 +263,12 @@ while True:
         enable.value = False
 
         if get_voltage(vbat_voltage) < 3.31:
+            enable.value = True
             pixels.fill(BLACK)
             thumpers.fill(BLACK)
             pixels.show()
             thumpers.show()
             palette_index = 0
-            enable.value = True
 
             for filename in pwrmp3:
                 decoder.file = open(filename, "rb")
